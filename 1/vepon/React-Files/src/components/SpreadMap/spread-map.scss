@@ -1,0 +1,271 @@
+
+
+/*
+================================================
+   Map style
+================================================
+*/
+
+.spread-map{
+    overflow: hidden;
+    background-image: linear-gradient(182deg, #469eff 0%, #2f69ff 100%);
+}
+.spread-map .sec-title{
+    margin-bottom: 0
+}
+.spread-map .counter-container{
+    margin-top: 20px
+}
+@media (max-width: 767px){
+    .spread-map .map-container{
+        margin-top: 30px
+    }
+    .token-allocation .visa{
+        margin-bottom: 30px
+    }
+}
+.spread-map .s-list-icon{
+    position: absolute;
+    top: 8px;
+    padding: 7px;
+    border: 1px solid;
+    left: 0;
+}
+.spread-map .s-list-desc{
+    padding-left: 45px;
+}
+.counter-wrapper{
+    position: relative;
+    margin-top: 20px;
+    color: #222;
+    z-index: 5;
+}
+.counter-wrapper .icon-box {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 2px solid #ffb426;
+}
+.counter-wrapper .icon-box img{
+    position: absolute;
+    max-width: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.counter-wrapper .counter{
+    color: #ffb426;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+}
+.counter-wrapper h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/*
+================================================
+   map section style
+================================================
+*/
+.download{
+    position: relative;
+    /*background-image: url(../img/svg/download-bg2.svg), url(../img/svg/download-bg3.svg), radial-gradient(695.86px at 60.13% 22.68%, rgb(140, 183, 255) 0%, rgb(96, 153, 250) 100%);*/
+    background-size:  894px 645px, 1005px 663px, 100%;
+    box-shadow: rgba(6, 28, 66, 0.1) 0px 20px 40px;
+    padding: 100px 0px;
+    background-repeat: no-repeat;
+    background-position:  calc(50% - 370px) 50%, calc(50% - 455px) 50%, center center;
+}
+@media (max-width: 992px){
+    .download {
+    margin-top: 0px;
+        /*background-image:  url(../img/svg/download-bg2.svg), radial-gradient(695.86px at 60.13% 22.68%, rgb(140, 183, 255) 0%, rgb(96, 153, 250) 100%);*/
+        background-size: 100%, 100%;
+        padding: 100px 0px;
+        background-position: 50% 100%, center center;
+    }
+}
+
+.spread-map .map-container{
+    position: relative;
+}
+.indicator {
+    position: absolute;
+    z-index: 9;
+    width: 2.2em;
+    height: 2.2em;
+    cursor: pointer;
+}
+
+.indicator-item {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    margin: -15px 0 0 -15px;
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #ff226a;
+    -webkit-animation: pulse 0.6s infinite alternate;
+    animation: pulse 0.6s infinite alternate;
+}
+
+@-webkit-keyframes pulse {
+    from { -webkit-transform: scale3d(0.5,0.5,1); }
+    to { -webkit-transform: scale3d(1,1,1); }
+}
+
+@keyframes pulse {
+    from { -webkit-transform: scale3d(0.5,0.5,1); transform: scale3d(0.5,0.5,1); }
+    to { -webkit-transform: scale3d(1,1,1); transform: scale3d(1,1,1); }
+}
+
+.indicator:hover .indicator-item {
+    border-color: #071e33;
+}
+
+.indicator:first-child {
+    top: 10%;
+    left: 40%;
+}
+
+.indicator:nth-child(2) {
+    top: 19%;
+    left: 13%;
+}
+
+.indicator:nth-child(3) {
+    top: 40%;
+    left: 50%;
+}
+
+.indicator:nth-child(4) {
+    top: 20%;
+    left: 70%;
+}
+
+.indicator-content {
+    position: absolute;
+    z-index: 99;
+    width: 250px;
+    left: 50%;
+    bottom: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+    font-weight: 400;
+    color: #fffaf0;
+    background: transparent;
+    opacity: 0;
+    margin: 0 0 20px -150px;
+    cursor: default;
+    pointer-events: none;
+    font-family: 'open-sans', cursive;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: opacity 0.3s 0.3s;
+    transition: opacity 0.3s 0.3s;
+}
+
+.indicator:hover .indicator-content {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.indicator-content span {
+    display: block;
+}
+
+.indicator-text {
+    border-bottom: 3px solid #ffb426;
+    overflow: hidden;
+    -webkit-transform: scale3d(0,1,1);
+    transform: scale3d(0,1,1);
+    -webkit-transition: -webkit-transform 0.3s 0.3s;
+    transition: transform 0.3s 0.3s;
+}
+
+.indicator:hover .indicator-text {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+.indicator-inner {
+    background: #1e3953;
+    padding: 10px 15px;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.indicator:hover .indicator-inner {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.s-list li {
+    margin-bottom: 10px;
+    color: #777;
+    position: relative;
+    font-size: 15px
+}
+.s-list span.fa {
+    font-size: 16px;
+    color: #5892f5;
+    margin-right: 10px;
+}
+.spread-map .s-list li{
+    min-height: 50px
+}
+.spread-map .single-service-item{
+    min-height: 519px
+}
+.hotel-item{
+    position: relative;
+    border-radius: 10px
+}
+.hotel-item .review{
+    position: absolute;
+    padding: 5px 9px;
+    top: 15px;
+    right: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #0066d6;
+    border-radius: 5px;
+}
+.hotel-info{
+    position: absolute;
+    width: 100%;
+    background: -webkit-linear-gradient(top,transparent,#000);
+    background: linear-gradient(to bottom,transparent,#000);
+    padding: 25px 20px 5px;
+    bottom: 0;
+    left: 0;
+}
+.hotel-info h6{
+    color: #fff !important;
+    text-align: left;
+}
+.hotel-item .stars i{
+   font-size: 12px;
+   color: #fff
+}
+
+.copy-rights{
+    padding: 30px 0;
+    background: #000
+}

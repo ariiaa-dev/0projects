@@ -1,0 +1,26 @@
+
+/* ##### Accordians CSS ##### */
+
+.info-faq-area dl {
+    width: 100%;
+}
+
+.info-faq-area dt {
+    cursor: pointer;
+    padding: 15px 25px;
+    background: #c31e39;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 500;
+}
+.info-faq-area dt:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-faq-area dd {
+    margin: 0;
+    padding: 15px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+

@@ -1,0 +1,22 @@
+[
+	{
+		"path":"/aboutUs",
+		"nameLink":"About Us"
+	},
+	{
+		"path":"/services",
+		"nameLink":"Services"
+	},
+	{
+		"path":"/faq",
+		"nameLink":"FAQ"
+	},
+	{
+		"path":"/pricing",
+		"nameLink":"Pricing"
+	},
+	{
+		"path":"/contactUs",
+		"nameLink":"Contact"
+	}
+]

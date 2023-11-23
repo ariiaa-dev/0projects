@@ -1,0 +1,311 @@
+
+/* ##### 12.0 testimonial Area CSS ##### */
+
+.TestimonialArea{
+    // overflow: hidden;
+}
+
+.single-testimonial{
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    margin: 0 15px;
+    padding: 30px 20px;
+    // background: url(../../assets/img/core-img/cards-bg.png), #fff;
+}
+.testimonial-description {
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    text-align: center;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.testimonial_image {
+    height: 100px;
+    width: 100px;
+    // margin: auto;
+}
+
+.testimonial_image > img {
+    // border-radius: 50%;
+}
+
+.testimonial_text > p {
+    font-weight: 500;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.admin_text > h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.admin_text > p {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.client_slides .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.client_slides .owl-dot {
+    margin: 0 5px;
+    line-height: 1;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.client_slides .owl-dot.active {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+
+/* ##### 12.0 testimonial Area CSS ##### */
+.single-testimonial{
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    margin: 0 15px;
+    padding: 30px 20px;
+    // background: url(../../assets/img/core-img/cards-bg.png), #fff;
+}
+.testimonial-description {
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    text-align: center;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.testimonial_image {
+    height: 100px;
+    width: 100px;
+    // margin: auto;
+}
+
+.testimonial_image > img {
+    // border-radius: 50%;
+}
+
+.testimonial_text > p {
+    font-weight: 500;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.admin_text > h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.admin_text > p {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.client_slides .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.client_slides .owl-dot {
+    margin: 0 5px;
+    line-height: 1;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.client_slides .owl-dot.active {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+.swiper-pagination{
+    display: none !important;
+}
+
+
+/* ##### 12.0 testimonial Area CSS ##### */
+.single-testimonial{
+    border: 2px solid #eee;
+    position: relative;
+    margin: 0 15px;
+    overflow: hidden;
+    padding: 30px 20px;
+    /*background: url(../../assets/img/core-img/pattern-bg.svg), #fff;*/
+}
+.icon_wrapper:after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fef300;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+.single-testimonial .icon_wrapper:after{display: none;}
+.single-testimonial .icon_wrapper i{
+    bottom: 0%;
+    top: inherit;
+    left: inherit;
+    right: 15px;
+    padding: 20px;
+    color: #211e1e;
+    font-size: 60px;
+    z-index: 0;
+    line-height: 1;
+    position: absolute;
+    opacity: 1;
+    background: wheat;
+}
+.icon_wrapper img{
+    bottom: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 41px;
+    color: #fff;
+    z-index: 3;
+    position: absolute;
+}
+.icon_wrapper i {
+    top: 20px;
+    left: 15px;
+    color: #fff;
+    font-size: 36px;
+    z-index: 3;
+    position: absolute;
+}
+
+
+.icon_foot:before {
+    content: '';
+    border-left: 80px solid transparent;
+    border-bottom: 80px solid #2ec8a6;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.icon_foot img{
+    top: 20px;
+    left: 12px;
+    max-width: 41px;
+    color: #fff;
+    z-index: 3;
+    position: absolute;
+}
+.icon_foot i {
+    bottom: 12px;
+    right: 8px;
+    color: #fff;
+    font-size: 28px;
+    z-index: 3;
+    position: absolute;
+    transition: all .4s ease-in-out;
+}
+.icon_foot:hover i{
+    right: 5px;
+}
+.testimonial-description {
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    text-align: left;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.testimonial_image {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px
+}
+
+.test-stars{position: relative;}
+.test-stars i{color: #f3961b !important}
+.testimonial_text > p {
+    font-weight: 500;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.admin_text > h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #354168;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.admin_text > p {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.client_slides .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.client_slides .owl-dot {
+    margin: 0 5px;
+    line-height: 1;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.client_slides .owl-dot.active {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
